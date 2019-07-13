@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo-NexT主题配置]]></title>
+    <url>%2F2019%2F07%2F12%2FHexo-NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test_my_site]]></title>
+    <url>%2F2019%2F07%2F09%2Ftest-my-site%2F</url>
+    <content type="text"></content>
+  </entry>
+</search>

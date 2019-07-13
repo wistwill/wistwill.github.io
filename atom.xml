@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Will&#39;s Blog</title>
+  
+  <subtitle>时光，不会辜负每个平静努力的人</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://wistwill.github.io/"/>
+  <updated>2019-07-12T15:17:47.798Z</updated>
+  <id>http://wistwill.github.io/</id>
+  
+  <author>
+    <name>wistwill</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-NexT主题配置</title>
+    <link href="http://wistwill.github.io/2019/07/12/Hexo-NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
+    <id>http://wistwill.github.io/2019/07/12/Hexo-NexT主题配置/</id>
+    <published>2019-07-11T16:00:00.000Z</published>
+    <updated>2019-07-12T15:17:47.798Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://wistwill.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://wistwill.github.io/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://wistwill.github.io/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test_my_site</title>
+    <link href="http://wistwill.github.io/2019/07/09/test-my-site/"/>
+    <id>http://wistwill.github.io/2019/07/09/test-my-site/</id>
+    <published>2019-07-09T15:02:49.000Z</published>
+    <updated>2019-07-12T15:16:44.106Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
