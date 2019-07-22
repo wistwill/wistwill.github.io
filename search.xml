@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java基础--原码反码补码]]></title>
+    <url>%2F2019%2F07%2F22%2FJava%E5%9F%BA%E7%A1%80--%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81%2F</url>
+    <content type="text"><![CDATA[作用：用于计算、强制类型转换 区分：有符号位数据表示方式（最高位为符号位） 数 原码 反码 补码 正数 与原码同（0011） 与原码同（0011） 与原码同（0011） 负数 与原码同（1011） 原码逐位取反（0100） 反码末位加1（0101） 计算： ​ A:已知原码求补码（先取反再加1） ​ 1011 原码 ​ 0100 反码 ​ 0101 补码 ​ B:已知补码求原码 ​ 0101 补码 ​ 0100 反码 ​ 1011 原码]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>原码反码补码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo-NexT主题配置]]></title>
     <url>%2F2019%2F07%2F12%2FHexo-NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"></content>

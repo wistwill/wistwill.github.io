@@ -486,6 +486,221 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="/2019/07/22/Java基础--原码反码补码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wistwill">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/22/Java基础--原码反码补码/" itemprop="url">Java基础--原码反码补码</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-22T00:00:00+08:00">
+                2019-07-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  118
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>作用</strong>：用于计算、强制类型转换</p>
+<p><strong>区分：</strong>有符号位数据表示方式（最高位为符号位）</p>
+<table>
+<thead>
+<tr>
+<th align="center">数</th>
+<th align="center">原码</th>
+<th align="center">反码</th>
+<th align="center">补码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">正数</td>
+<td align="center">与原码同（0011）</td>
+<td align="center">与原码同（0011）</td>
+<td align="center">与原码同（0011）</td>
+</tr>
+<tr>
+<td align="center">负数</td>
+<td align="center">与原码同（1011）</td>
+<td align="center">原码逐位取反（0100）</td>
+<td align="center">反码末位加1（0101）</td>
+</tr>
+</tbody></table>
+<p><strong>计算：</strong></p>
+<p>​    A:已知原码求补码（先取反再加1）</p>
+<p>​        1011    原码</p>
+<p>​        0100    反码</p>
+<p>​        0101    补码</p>
+<p>​    B:已知补码求原码</p>
+<p>​        0101    补码</p>
+<p>​        0100    反码</p>
+<p>​        1011    原码</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+    </div>
+
+<div>
+      
+</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="/2019/07/09/test-my-site/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -856,7 +1071,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -867,7 +1082,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 
               </div>
@@ -878,7 +1093,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -980,7 +1195,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">73</span>
+    <span title="Site words total count">191</span>
   
 </div>
 -->
@@ -1017,7 +1232,7 @@
    <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-  <span class="post-count">博客全站共73字</span>
+  <span class="post-count">博客全站共191字</span>
 </div>
         
 <div class="busuanzi-count">
