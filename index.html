@@ -486,6 +486,304 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="/2019/07/22/Java基础--数据类型和分类/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wistwill">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/22/Java基础--数据类型和分类/" itemprop="url">Java基础--数据类型和分类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-22T00:00:00+08:00">
+                2019-07-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  857
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="为什么有数据类型："><a href="#为什么有数据类型：" class="headerlink" title="为什么有数据类型："></a>为什么有数据类型：</h2><p>​    Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型，在内存分配时，分配了不同大小的内存空间，方便节约内存以及内存管理</p>
+<hr>
+<h2 id="Java中的数据类型分类："><a href="#Java中的数据类型分类：" class="headerlink" title="Java中的数据类型分类："></a>Java中的数据类型分类：</h2><ul>
+<li><p>基本数据类型</p>
+</li>
+<li><p>引用数据类型（面向对象中补充）</p>
+<p><img src="C:%5CUsers%5CWill%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564500046533.png" alt="1564500046533"></p>
+</li>
+</ul>
+<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="整数型（默认类型int）"><a href="#整数型（默认类型int）" class="headerlink" title="整数型（默认类型int）"></a>整数型（默认类型int）</h4><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">长度</th>
+<th align="center">大小</th>
+<th align="center">注意</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">byte</td>
+<td align="center">1字节</td>
+<td align="center">-128~127</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">short</td>
+<td align="center">2字节</td>
+<td align="center">-2^15~2^15-1</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">4字节</td>
+<td align="center">-2^31~2^31-1</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">8字节</td>
+<td align="center">-2^63~2^63-1</td>
+<td align="center">后需要加L/l进行标识</td>
+</tr>
+</tbody></table>
+<h4 id="浮点型（默认类型double）"><a href="#浮点型（默认类型double）" class="headerlink" title="浮点型（默认类型double）"></a>浮点型（默认类型double）</h4><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">长度</th>
+<th align="center">大小</th>
+<th align="center">注意</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">float</td>
+<td align="center">4字节</td>
+<td align="center">-3.403E38~3.403E38</td>
+<td align="center">后需要加F/f进行标识</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">8字节</td>
+<td align="center">-1.798E308-1.798E308</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">长度</th>
+<th align="center">大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">char</td>
+<td align="center">2字节</td>
+<td align="center">0~65535</td>
+</tr>
+</tbody></table>
+<h4 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h4><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">长度</th>
+<th align="center">值</th>
+<th align="center">注意</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">boolean</td>
+<td align="center">1/8字节(理论上，没有明确指定)</td>
+<td align="center">true\false</td>
+<td align="center">不可转化为其他类型</td>
+</tr>
+</tbody></table>
+<h2 id="常见案例"><a href="#常见案例" class="headerlink" title="常见案例"></a>常见案例</h2><p>​    <strong>作用域问题：</strong></p>
+<p>​        同一作用域内不能使用相同的变量名</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_1DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> x = <span class="number">10</span>;</span><br><span class="line">		<span class="comment">//int x = 20;</span></span><br><span class="line">		System.out.println(x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<p>​    <strong>初始值问题：</strong></p>
+<p>​        局部变量在使用之前必须赋值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_2DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> y;</span><br><span class="line">		<span class="comment">//y = 10;</span></span><br><span class="line">        y = <span class="number">10</span>;</span><br><span class="line">		System.out.println(y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<p>​    <strong>一条语句可以定义几个变量</strong>：</p>
+<p>​        int a,b,c,d…….;</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_3DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> a,b,c;</span><br><span class="line">		a = <span class="number">10</span>;</span><br><span class="line">		b = <span class="number">20</span>;</span><br><span class="line">		c = <span class="number">30</span>;     </span><br><span class="line">        <span class="keyword">short</span> x = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">long</span> y = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">byte</span> z = <span class="number">3</span>;</span><br><span class="line">		System.out.println(a);</span><br><span class="line">		System.out.println(b);</span><br><span class="line">		System.out.println(c);</span><br><span class="line">        System.out.println(x);</span><br><span class="line">        System.out.println(y);</span><br><span class="line">        System.out.println(z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">20</span></span><br><span class="line"><span class="number">30</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="数据类型之隐式转换"><a href="#数据类型之隐式转换" class="headerlink" title="数据类型之隐式转换"></a>数据类型之隐式转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo4_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *	byte,short,char --&gt; int --&gt;long --&gt; float --&gt;double</span></span><br><span class="line"><span class="comment">     *boolean 不参与运算</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;		<span class="comment">//默认进行隐式转换——小转大：byte转换为int</span></span><br><span class="line">        x = x+y;</span><br><span class="line">        System.out.println(x);        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion1.png" alt="DataTypeConversion1"></p>
+<h2 id="数据类型之强制转换"><a href="#数据类型之强制转换" class="headerlink" title="数据类型之强制转换"></a>数据类型之强制转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo5_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;</span><br><span class="line">        y = (<span class="keyword">byte</span>)(x+y);		<span class="comment">//使用相应类型进行强制转换</span></span><br><span class="line">        System.out.println(y); </span><br><span class="line">        </span><br><span class="line"><span class="comment">/*向下强制转换后的值作为补码直接进行计算，这样会存在损失精度的问题*/</span></span><br><span class="line">        <span class="keyword">byte</span> b = (<span class="keyword">byte</span>)(<span class="number">126</span>+<span class="number">4</span>);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000000	10000010	130的二进制</span></span><br><span class="line">        <span class="comment">//10000010	强制转换后	-126是补码，即：126的补码</span></span><br><span class="line">        <span class="comment">//10000001	补码-1		126的反码</span></span><br><span class="line">        <span class="comment">//01111110	原码		126的原码</span></span><br><span class="line">        <span class="keyword">byte</span> c = (<span class="keyword">byte</span>)<span class="number">300</span>;</span><br><span class="line">        System.out.println(c);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000001	00101100	300的二进制</span></span><br><span class="line">        <span class="comment">//00101100	强制转换后	 44是补码</span></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br><span class="line">-<span class="number">126</span></span><br><span class="line"><span class="number">44</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion2.png" alt="DataTypeConversion2"></p>
+<h2 id="面试题："><a href="#面试题：" class="headerlink" title="面试题："></a>面试题：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test_DataTtpeConversion</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="comment">//看下面程序是否有问题，如果有问题，请说明理由。</span></span><br><span class="line">        <span class="keyword">byte</span> b1 = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> b2 = <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">byte</span> b3 = b1 + b2;	<span class="comment">//此句有误</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        bug：Type mismatch: cannot convert from int to byte</span></span><br><span class="line"><span class="comment">        两方面：</span></span><br><span class="line"><span class="comment">        1.byte与byte（或short，char）进行运算时会提升为int，两个int相加后的和也为int类型</span></span><br><span class="line"><span class="comment">        2.b1、b2是两个变量，变量存储的值是变化的，在编译的时候无法判断里面具体的值，相加有可能会超出byte的取值      </span></span><br><span class="line"><span class="comment">        Debug：强制转换</span></span><br><span class="line"><span class="comment">        byte b3 = (byte)(b1 + b2);	</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">byte</span> b4 = <span class="number">3</span> + <span class="number">4</span>;</span><br><span class="line">        <span class="comment">/*这句为什么是正确的？</span></span><br><span class="line"><span class="comment">        java编译器有常量优化机制,即：对常量结果进行判断。本题目中：7在-128~127之间，即：一个字节的长度内，所以直接赋值。</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        System.out.sprintln(b3);  </span><br><span class="line">        System.out.sprintln(b4);  </span><br><span class="line">    &#125;  </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------------------</span><br><span class="line">Debug后：</span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="long与float大小关系"><a href="#long与float大小关系" class="headerlink" title="long与float大小关系"></a>long与float大小关系</h3><p>5</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+    </div>
+
+<div>
+      
+</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="/2019/07/22/Java基础--原码反码补码/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -701,304 +999,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="/2019/07/22/Java基础--数据类型和分类/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="wistwill">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/22/Java基础--数据类型和分类/" itemprop="url">Java基础--数据类型和分类</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-22T00:00:00+08:00">
-                2019-07-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  851
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="为什么有数据类型："><a href="#为什么有数据类型：" class="headerlink" title="为什么有数据类型："></a>为什么有数据类型：</h2><p>​    Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型，在内存分配时，分配了不同大小的内存空间，方便节约内存以及内存管理</p>
-<hr>
-<h2 id="Java中的数据类型分类："><a href="#Java中的数据类型分类：" class="headerlink" title="Java中的数据类型分类："></a>Java中的数据类型分类：</h2><ul>
-<li><p>基本数据类型</p>
-</li>
-<li><p>引用数据类型（面向对象中补充）</p>
-<p><img src="C:%5CUsers%5CWill%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564500046533.png" alt="1564500046533"></p>
-</li>
-</ul>
-<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="整数型（默认类型int）"><a href="#整数型（默认类型int）" class="headerlink" title="整数型（默认类型int）"></a>整数型（默认类型int）</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">大小</th>
-<th align="center">注意</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">byte</td>
-<td align="center">1字节</td>
-<td align="center">-128~127</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">short</td>
-<td align="center">2字节</td>
-<td align="center">-2^15~2^15-1</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center">4字节</td>
-<td align="center">-2^31~2^31-1</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">8字节</td>
-<td align="center">-2^63~2^63-1</td>
-<td align="center">后需要加L/l进行标识</td>
-</tr>
-</tbody></table>
-<h4 id="浮点型（默认类型double）"><a href="#浮点型（默认类型double）" class="headerlink" title="浮点型（默认类型double）"></a>浮点型（默认类型double）</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">大小</th>
-<th align="center">注意</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">float</td>
-<td align="center">4字节</td>
-<td align="center">-3.403E38~3.403E38</td>
-<td align="center">后需要加F/f进行标识</td>
-</tr>
-<tr>
-<td align="center">double</td>
-<td align="center">8字节</td>
-<td align="center">-1.798E308-1.798E308</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">大小</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">char</td>
-<td align="center">2字节</td>
-<td align="center">0~65535</td>
-</tr>
-</tbody></table>
-<h4 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">值</th>
-<th align="center">注意</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">boolean</td>
-<td align="center">1/8字节(理论上，没有明确指定)</td>
-<td align="center">true\false</td>
-<td align="center">不可转化为其他类型</td>
-</tr>
-</tbody></table>
-<h2 id="常见案例"><a href="#常见案例" class="headerlink" title="常见案例"></a>常见案例</h2><p>​    <strong>作用域问题：</strong></p>
-<p>​        同一作用域内不能使用相同的变量名</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_1DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> x = <span class="number">10</span>;</span><br><span class="line">		<span class="comment">//int x = 20;</span></span><br><span class="line">		System.out.println(x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
-
-<p>​    <strong>初始值问题：</strong></p>
-<p>​        局部变量在使用之前必须赋值</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_2DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> y;</span><br><span class="line">		<span class="comment">//y = 10;</span></span><br><span class="line">        y = <span class="number">10</span>;</span><br><span class="line">		System.out.println(y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
-
-<p>​    <strong>一条语句可以定义几个变量</strong>：</p>
-<p>​        int a,b,c,d…….;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_3DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> a,b,c;</span><br><span class="line">		a = <span class="number">10</span>;</span><br><span class="line">		b = <span class="number">20</span>;</span><br><span class="line">		c = <span class="number">30</span>;     </span><br><span class="line">        <span class="keyword">short</span> x = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">long</span> y = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">byte</span> z = <span class="number">3</span>;</span><br><span class="line">		System.out.println(a);</span><br><span class="line">		System.out.println(b);</span><br><span class="line">		System.out.println(c);</span><br><span class="line">        System.out.println(x);</span><br><span class="line">        System.out.println(y);</span><br><span class="line">        System.out.println(z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">20</span></span><br><span class="line"><span class="number">30</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="数据类型之隐式转换"><a href="#数据类型之隐式转换" class="headerlink" title="数据类型之隐式转换"></a>数据类型之隐式转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo4_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *	byte,short,char --&gt; int --&gt;long --&gt; float --&gt;double</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;		<span class="comment">//默认进行隐式转换——小转大：byte转换为int</span></span><br><span class="line">        x = x+y;</span><br><span class="line">        System.out.println(x);        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion1.png" alt="DataTypeConversion1"></p>
-<h2 id="数据类型之强制转换"><a href="#数据类型之强制转换" class="headerlink" title="数据类型之强制转换"></a>数据类型之强制转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo5_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;</span><br><span class="line">        y = (<span class="keyword">byte</span>)(x+y);		<span class="comment">//使用相应类型进行强制转换</span></span><br><span class="line">        System.out.println(y); </span><br><span class="line">        </span><br><span class="line"><span class="comment">/*向下强制转换后的值作为补码直接进行计算，这样会存在损失精度的问题*/</span></span><br><span class="line">        <span class="keyword">byte</span> b = (<span class="keyword">byte</span>)(<span class="number">126</span>+<span class="number">4</span>);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000000	10000010	130的二进制</span></span><br><span class="line">        <span class="comment">//10000010	强制转换后	-126是补码，即：126的补码</span></span><br><span class="line">        <span class="comment">//10000001	补码-1		126的反码</span></span><br><span class="line">        <span class="comment">//01111110	原码		126的原码</span></span><br><span class="line">        <span class="keyword">byte</span> c = (<span class="keyword">byte</span>)<span class="number">300</span>;</span><br><span class="line">        System.out.println(c);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000001	00101100	300的二进制</span></span><br><span class="line">        <span class="comment">//00101100	强制转换后	 44是补码</span></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br><span class="line">-<span class="number">126</span></span><br><span class="line"><span class="number">44</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion2.png" alt="DataTypeConversion2"></p>
-<h2 id="面试题："><a href="#面试题：" class="headerlink" title="面试题："></a>面试题：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test_DataTtpeConversion</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="comment">//看下面程序是否有问题，如果有问题，请说明理由。</span></span><br><span class="line">        <span class="keyword">byte</span> b1 = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> b2 = <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">byte</span> b3 = b1 + b2;	<span class="comment">//此句有误</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        bug：Type mismatch: cannot convert from int to byte</span></span><br><span class="line"><span class="comment">        两方面：</span></span><br><span class="line"><span class="comment">        1.byte与byte（或short，char）进行运算时会提升为int，两个int相加后的和也为int类型</span></span><br><span class="line"><span class="comment">        2.b1、b2是两个变量，变量存储的值是变化的，在编译的时候无法判断里面具体的值，相加有可能会超出byte的取值      </span></span><br><span class="line"><span class="comment">        Debug：强制转换</span></span><br><span class="line"><span class="comment">        byte b3 = (byte)(b1 + b2);	</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">byte</span> b4 = <span class="number">3</span> + <span class="number">4</span>;</span><br><span class="line">        <span class="comment">/*这句为什么是正确的？</span></span><br><span class="line"><span class="comment">        java编译器有常量优化机制,即：对常量结果进行判断。本题目中：7在-128~127之间，即：一个字节的长度内，所以直接赋值。</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        System.out.sprintln(b3);  </span><br><span class="line">        System.out.sprintln(b4);  </span><br><span class="line">    &#125;  </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------------------</span><br><span class="line">Debug后：</span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="long与float大小关系"><a href="#long与float大小关系" class="headerlink" title="long与float大小关系"></a>long与float大小关系</h3><p>5</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    <div>
-      
-    </div>
-
-<div>
-      
-</div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="/2019/07/22/Java基础--语法格式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1086,7 +1086,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  403
+                  405
                 </span>
               
 
@@ -1126,7 +1126,7 @@
         
           
             <h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><h4 id><a href="#" class="headerlink" title></a><img src="C:%5CUsers%5CWill%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564559231929.png" alt="1564559231929"></h4><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>​    -用于解释说明程序的文字</p>
-<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><h5 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h5><p>​    -格式：//注释文字    快捷键:Ctrl+/</p>
+<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><h5 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h5><p>​    -格式：<code>//注释文字</code>    快捷键:Ctrl+/</p>
 <h5 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h5><p>​    -格式：<code>/*注释文字*/</code>    快捷键:Ctrl+Shift+/    Ctrl+Shift+\</p>
 <h5 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h5><p>​    -格式：<code>/**注释文字*/</code></p>
 <h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>​    -用于解释说明程序</p>
@@ -1138,9 +1138,9 @@
 <p>​    -整数常量    所有整数(12,-20)</p>
 <p>​    -小数常量    所有小数(12.34)</p>
 <p>​    -字符常量    用单引号括起来的内容(‘a’,’A’,’B’)</p>
-<p>​    <strong>注意:</strong></p>
-<p>​        单引号中只能放一个(错误案例:’AB’)</p>
-<p>​        空字符:\u0000</p>
+<p><strong>注意:</strong></p>
+<p>​    <code>单引号中只能放一个(错误案例:&#39;AB&#39;)</code></p>
+<p>​    <code>空字符:\u0000</code></p>
 <p>​    -布尔常量    较为特有:(true/false)</p>
 <p>​    -空常量    null(数组部分讲解)</p>
 <h5 id="自定义常量"><a href="#自定义常量" class="headerlink" title="自定义常量:"></a>自定义常量:</h5><p>​    -final 数据类型 变量名 = 初始值;</p>
@@ -1705,7 +1705,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.4k</span>
+    <span title="Site words total count">1.5k</span>
   
 </div>
 -->
@@ -1742,7 +1742,7 @@
    <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-  <span class="post-count">博客全站共1.4k字</span>
+  <span class="post-count">博客全站共1.5k字</span>
 </div>
         
 <div class="busuanzi-count">

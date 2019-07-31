@@ -100,7 +100,7 @@
 <meta property="og:image" content="c:%5CUsers%5CWill%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564500046533.png">
 <meta property="og:image" content="e:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion1.png">
 <meta property="og:image" content="e:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion2.png">
-<meta property="og:updated_time" content="2019-07-31T09:35:44.500Z">
+<meta property="og:updated_time" content="2019-07-31T13:19:43.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础--数据类型和分类">
 <meta name="twitter:description" content="为什么有数据类型：​    Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型，在内存分配时，分配了不同大小的内存空间，方便节约内存以及内存管理  Java中的数据类型分类： 基本数据类型  引用数据类型（面向对象中补充）    基本数据类型整数型（默认类型int）   类型 长度 大小 注意    byte 1字节 -128~127    short 2字节 -2^15~2^15">
@@ -401,7 +401,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  851
+                  857
                 </span>
               
 
@@ -545,7 +545,7 @@
 <p>​        int a,b,c,d…….;</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_3DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> a,b,c;</span><br><span class="line">		a = <span class="number">10</span>;</span><br><span class="line">		b = <span class="number">20</span>;</span><br><span class="line">		c = <span class="number">30</span>;     </span><br><span class="line">        <span class="keyword">short</span> x = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">long</span> y = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">byte</span> z = <span class="number">3</span>;</span><br><span class="line">		System.out.println(a);</span><br><span class="line">		System.out.println(b);</span><br><span class="line">		System.out.println(c);</span><br><span class="line">        System.out.println(x);</span><br><span class="line">        System.out.println(y);</span><br><span class="line">        System.out.println(z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">20</span></span><br><span class="line"><span class="number">30</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="数据类型之隐式转换"><a href="#数据类型之隐式转换" class="headerlink" title="数据类型之隐式转换"></a>数据类型之隐式转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo4_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *	byte,short,char --&gt; int --&gt;long --&gt; float --&gt;double</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;		<span class="comment">//默认进行隐式转换——小转大：byte转换为int</span></span><br><span class="line">        x = x+y;</span><br><span class="line">        System.out.println(x);        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+<h2 id="数据类型之隐式转换"><a href="#数据类型之隐式转换" class="headerlink" title="数据类型之隐式转换"></a>数据类型之隐式转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo4_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *	byte,short,char --&gt; int --&gt;long --&gt; float --&gt;double</span></span><br><span class="line"><span class="comment">     *boolean 不参与运算</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;		<span class="comment">//默认进行隐式转换——小转大：byte转换为int</span></span><br><span class="line">        x = x+y;</span><br><span class="line">        System.out.println(x);        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion1.png" alt="DataTypeConversion1"></p>
 <h2 id="数据类型之强制转换"><a href="#数据类型之强制转换" class="headerlink" title="数据类型之强制转换"></a>数据类型之强制转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo5_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;</span><br><span class="line">        y = (<span class="keyword">byte</span>)(x+y);		<span class="comment">//使用相应类型进行强制转换</span></span><br><span class="line">        System.out.println(y); </span><br><span class="line">        </span><br><span class="line"><span class="comment">/*向下强制转换后的值作为补码直接进行计算，这样会存在损失精度的问题*/</span></span><br><span class="line">        <span class="keyword">byte</span> b = (<span class="keyword">byte</span>)(<span class="number">126</span>+<span class="number">4</span>);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000000	10000010	130的二进制</span></span><br><span class="line">        <span class="comment">//10000010	强制转换后	-126是补码，即：126的补码</span></span><br><span class="line">        <span class="comment">//10000001	补码-1		126的反码</span></span><br><span class="line">        <span class="comment">//01111110	原码		126的原码</span></span><br><span class="line">        <span class="keyword">byte</span> c = (<span class="keyword">byte</span>)<span class="number">300</span>;</span><br><span class="line">        System.out.println(c);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000001	00101100	300的二进制</span></span><br><span class="line">        <span class="comment">//00101100	强制转换后	 44是补码</span></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br><span class="line">-<span class="number">126</span></span><br><span class="line"><span class="number">44</span></span><br></pre></td></tr></table></figure>
@@ -583,7 +583,7 @@
   <p><span>本文标题:</span><a href="/2019/07/22/Java基础--数据类型和分类/">Java基础--数据类型和分类</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 wistwill 的个人博客">wistwill</a></p>
   <p><span>发布时间:</span>2019年07月22日 - 00:07</p>
-  <p><span>最后更新:</span>2019年07月31日 - 17:07</p>
+  <p><span>最后更新:</span>2019年07月31日 - 21:07</p>
   <p><span>原始链接:</span><a href="/2019/07/22/Java基础--数据类型和分类/" title="Java基础--数据类型和分类">/2019/07/22/Java基础--数据类型和分类/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="/2019/07/22/Java基础--数据类型和分类/" aria-label="复制成功！"></i></span>
   </p>
@@ -631,8 +631,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/22/Java基础--语法格式/" rel="next" title="Java基础--语法格式">
-                <i class="fa fa-chevron-left"></i> Java基础--语法格式
+              <a href="/2019/07/22/Java基础--原码反码补码/" rel="next" title="Java基础--原码反码补码">
+                <i class="fa fa-chevron-left"></i> Java基础--原码反码补码
               </a>
             
           </div>
@@ -640,10 +640,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/22/Java基础--原码反码补码/" rel="prev" title="Java基础--原码反码补码">
-                Java基础--原码反码补码 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -890,7 +886,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.4k</span>
+    <span title="Site words total count">1.5k</span>
   
 </div>
 -->
@@ -927,7 +923,7 @@ var jiathis_config={
    <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-  <span class="post-count">博客全站共1.4k字</span>
+  <span class="post-count">博客全站共1.5k字</span>
 </div>
         
 <div class="busuanzi-count">
