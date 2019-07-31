@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java基础--数据类型和分类]]></title>
+    <url>%2F2019%2F07%2F22%2FJava%E5%9F%BA%E7%A1%80--%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%88%86%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[为什么有数据类型：​ Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型，在内存分配时，分配了不同大小的内存空间，方便节约内存以及内存管理 Java中的数据类型分类： 基本数据类型 引用数据类型（面向对象中补充） 基本数据类型整数型（默认类型int） 类型 长度 大小 注意 byte 1字节 -128~127 short 2字节 -2^15~2^15-1 int 4字节 -2^31~2^31-1 long 8字节 -2^63~2^63-1 后需要加L/l进行标识 浮点型（默认类型double） 类型 长度 大小 注意 float 4字节 -3.403E38~3.403E38 后需要加F/f进行标识 double 8字节 -1.798E308-1.798E308 字符型 类型 长度 大小 char 2字节 0~65535 布尔型 类型 长度 值 注意 boolean 1/8字节(理论上，没有明确指定) true\false 不可转化为其他类型 常见案例​ 作用域问题： ​ 同一作用域内不能使用相同的变量名 123456789class Demo_1DataType&#123; public static void main(String[] args)&#123; int x = 10; //int x = 20; System.out.println(x); &#125;&#125;-------------------------------------------------------10 ​ 初始值问题： ​ 局部变量在使用之前必须赋值 12345678910class Demo_2DataType&#123; public static void main(String[] args)&#123; int y; //y = 10; y = 10; System.out.println(y); &#125;&#125;-------------------------------------------------------10 ​ 一条语句可以定义几个变量： ​ int a,b,c,d…….; 123456789101112131415161718192021222324class Demo_3DataType&#123; public static void main(String[] args)&#123; int a,b,c; a = 10; b = 20; c = 30; short x = 1; long y = 2; byte z = 3; System.out.println(a); System.out.println(b); System.out.println(c); System.out.println(x); System.out.println(y); System.out.println(z); &#125;&#125;----------------------------------------------------102030123 数据类型之隐式转换1234567891011121314class Demo4_DataTypeConversion&#123; /* * byte,short,char --&gt; int --&gt;long --&gt; float --&gt;double */ public static void main (String[] args)&#123; int x = 3; byte y = 4; //默认进行隐式转换——小转大：byte转换为int x = x+y; System.out.println(x); &#125; &#125;----------------------------------------------------7 数据类型之强制转换1234567891011121314151617181920212223242526class Demo5_DataTypeConversion&#123; public static void main (String[] args)&#123; int x = 3; byte y = 4; y = (byte)(x+y); //使用相应类型进行强制转换 System.out.println(y); /*向下强制转换后的值作为补码直接进行计算，这样会存在损失精度的问题*/ byte b = (byte)(126+4); System.out.println(b); //00000000 00000000 00000000 10000010 130的二进制 //10000010 强制转换后 -126是补码，即：126的补码 //10000001 补码-1 126的反码 //01111110 原码 126的原码 byte c = (byte)300; System.out.println(c); //00000000 00000000 00000001 00101100 300的二进制 //00101100 强制转换后 44是补码 &#125; &#125;------------------------------------------------------------------------7-12644 面试题：123456789101112131415161718192021222324252627class Test_DataTtpeConversion&#123; public static void main(String[] args)&#123; //看下面程序是否有问题，如果有问题，请说明理由。 byte b1 = 3; byte b2 = 4; byte b3 = b1 + b2; //此句有误 /* bug：Type mismatch: cannot convert from int to byte 两方面： 1.byte与byte（或short，char）进行运算时会提升为int，两个int相加后的和也为int类型 2.b1、b2是两个变量，变量存储的值是变化的，在编译的时候无法判断里面具体的值，相加有可能会超出byte的取值 Debug：强制转换 byte b3 = (byte)(b1 + b2); */ byte b4 = 3 + 4; /*这句为什么是正确的？ java编译器有常量优化机制,即：对常量结果进行判断。本题目中：7在-128~127之间，即：一个字节的长度内，所以直接赋值。 */ System.out.sprintln(b3); System.out.sprintln(b4); &#125; &#125;-------------------------------------------------------------------Debug后：77 long与float大小关系5]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>数据类型和分类</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java基础--原码反码补码]]></title>
     <url>%2F2019%2F07%2F22%2FJava%E5%9F%BA%E7%A1%80--%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81%2F</url>
     <content type="text"><![CDATA[作用：用于计算、强制类型转换 区分：有符号位数据表示方式（最高位为符号位） 数 原码 反码 补码 正数 与原码同（0011） 与原码同（0011） 与原码同（0011） 负数 与原码同（1011） 原码逐位取反（0100） 反码末位加1（0101） 计算： ​ A:已知原码求补码（先取反再加1） ​ 1011 原码 ​ 0100 反码 ​ 0101 补码 ​ B:已知补码求原码 ​ 0101 补码 ​ 0100 反码 ​ 1011 原码]]></content>
@@ -10,6 +22,18 @@
       <tags>
         <tag>Java</tag>
         <tag>原码反码补码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java基础--语法格式]]></title>
+    <url>%2F2019%2F07%2F22%2FJava%E5%9F%BA%E7%A1%80--%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[常用快捷键注释​ -用于解释说明程序的文字 分类单行注释​ -格式：//注释文字 快捷键:Ctrl+/ 多行注释​ -格式：/注释文字/ 快捷键Ctrl+Shift+/ Ctrl+Shift+\ 文档注释​ -格式：/*注释文字/ 作用​ -用于解释说明程序 ​ -便于方便调试错误 关键字​ -被赋予特殊意义单词 特点：​ -组成关键字的字母全部要小写 常量概述​ -在程序执行过程中,其值不可以发生改变的量 分类字面值常量:​ -字符串常量 用双括号括起来的内容(“HelloWorld!”) ​ -整数常量 所有整数(12,-20) ​ -小数常量 所有小数(12.34) ​ -字符常量 用单引号括起来的内容(‘a’,’A’,’B’) ​ 注意: ​ 单引号中只能放一个(错误案例:’AB’) ​ 空字符:\u0000 ​ -布尔常量 较为特有:(true/false) ​ -空常量 null(数组部分讲解) 自定义常量:​ -final 数据类型 变量名 = 初始值; 标识符​ -给包,项目,类,方法,变量等起名字的符号 组成:字母,数字,下划线,$ 起名规范:​ -包的命名方法:域名倒写(com.baidu.www) ​ -大驼峰:每一个单词的首字母都需要大写,用于命名:类,接口(Test,Interface) ​ -小驼峰:一个单词全小写,两个以上,从第二个开始首字母大写,可用于 命名:项目,方法,变量(schoolOcr,test,delete,number) ​ -自定义常量:每个字母都需要大写,单词之间用下划线(MAX_NUMBER) 注意: ​ -不能以数字开头 ​ -不能以关键字命名 ​ -严格区分大小写 ​]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>语法格式</tag>
       </tags>
   </entry>
   <entry>
