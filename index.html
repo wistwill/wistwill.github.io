@@ -1221,7 +1221,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  3k
+                  3.2k
                 </span>
               
 
@@ -1237,7 +1237,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  14
+                  15
                 </span>
               
             </div>
@@ -1338,6 +1338,8 @@
 <p>标签语句：<code>在嵌套循环中的某一循环前面添加标签，用于提示break结束的循环</code></p>
 <p><code>注意：一般与if语句搭配使用</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.will.work;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Break_Demo</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">10</span>;i++) &#123;</span><br><span class="line">			<span class="keyword">if</span>(i==<span class="number">3</span>) &#123;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(i);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"------------"</span>);</span><br><span class="line">		wc:<span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">5</span>;x++) &#123;</span><br><span class="line">			nc:<span class="keyword">for</span>(<span class="keyword">int</span> y=<span class="number">1</span>;y&lt;=<span class="number">5</span>;y++) &#123;</span><br><span class="line">				System.out.print(<span class="string">"*"</span>);</span><br><span class="line">				<span class="keyword">break</span> wc;</span><br><span class="line">			&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.will.homework;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">For_Score</span> </span>&#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 循环录入某学生的5门课程的成绩并计算平均分。</span></span><br><span class="line"><span class="comment">	 * 如果某分数录入为负，则停止录入并提示录入错误。</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> score, sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">boolean</span> flags = <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">double</span> avg;</span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		f: <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">			System.out.println(<span class="string">"请输入第"</span> + (i + <span class="number">1</span>) + <span class="string">"门成绩:"</span>);</span><br><span class="line">			score = sc.nextInt();</span><br><span class="line">			<span class="keyword">if</span> (score &gt;= <span class="number">0</span> &amp;&amp; score &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">				sum += score;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				flags = <span class="keyword">false</span>;</span><br><span class="line">				<span class="keyword">break</span> f;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (flags == <span class="keyword">false</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">"录入错误,请输入正确的成绩(1-100)!"</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			avg = sum / <span class="number">5.0</span>;</span><br><span class="line">			System.out.println(<span class="string">"这个同学的平均分为："</span> + avg);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="continue语句"><a href="#continue语句" class="headerlink" title="continue语句"></a>continue语句</h3><p>使用场景：<code>循环语句中（loop）：for,while,do...while</code></p>
 <p>作用：<code>满足条件，跳出本次循环，直接执行控制语句，进入下一次循环</code></p>
@@ -2636,7 +2638,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7.3k</span>
+    <span title="Site words total count">7.4k</span>
   
 </div>
 -->
@@ -2673,7 +2675,7 @@
    <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-  <span class="post-count">博客全站共7.3k字</span>
+  <span class="post-count">博客全站共7.4k字</span>
 </div>
         
 <div class="busuanzi-count">
