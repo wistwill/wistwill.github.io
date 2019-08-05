@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-08-04T13:22:25.007Z</updated>
+  <updated>2019-08-05T12:36:24.168Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java基础--方法</title>
+    <link href="/2019/08/05/Java%E5%9F%BA%E7%A1%80--%E6%96%B9%E6%B3%95/"/>
+    <id>/2019/08/05/Java基础--方法/</id>
+    <published>2019-08-04T16:00:00.000Z</published>
+    <updated>2019-08-05T12:36:24.168Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;h2 id=&quot;作用&quot;&gt;&lt;a href=&quot;#作用&quot; class=&quot;headerlink&quot; title=&quot;作用&quot;&gt;&lt;/a&gt;作用&lt;/h2&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="/tags/Java/"/>
+    
+      <category term="方法" scheme="/tags/%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Java基础--数组</title>
@@ -42,34 +70,6 @@
       <category term="Java" scheme="/tags/Java/"/>
     
       <category term="数组" scheme="/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java基础--流程控制</title>
-    <link href="/2019/07/23/Java%E5%9F%BA%E7%A1%80--%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
-    <id>/2019/07/23/Java基础--流程控制/</id>
-    <published>2019-07-22T16:00:00.000Z</published>
-    <updated>2019-08-04T14:16:32.335Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot; class=&quot;headerlink&quot; title=&quot;分类&quot;&gt;&lt;/a&gt;分类&lt;/h2&gt;&lt;h3 id=&quot;顺序结构&quot;&gt;&lt;a href=&quot;#顺序结构&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="/tags/Java/"/>
-    
-      <category term="流程控制" scheme="/tags/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
     
   </entry>
   
@@ -131,6 +131,34 @@
   </entry>
   
   <entry>
+    <title>Java基础--流程控制</title>
+    <link href="/2019/07/23/Java%E5%9F%BA%E7%A1%80--%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
+    <id>/2019/07/23/Java基础--流程控制/</id>
+    <published>2019-07-22T16:00:00.000Z</published>
+    <updated>2019-08-04T14:16:32.335Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot; class=&quot;headerlink&quot; title=&quot;分类&quot;&gt;&lt;/a&gt;分类&lt;/h2&gt;&lt;h3 id=&quot;顺序结构&quot;&gt;&lt;a href=&quot;#顺序结构&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="/tags/Java/"/>
+    
+      <category term="流程控制" scheme="/tags/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java基础--语法格式</title>
     <link href="/2019/07/22/Java%E5%9F%BA%E7%A1%80--%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F/"/>
     <id>/2019/07/22/Java基础--语法格式/</id>
@@ -179,6 +207,34 @@
   </entry>
   
   <entry>
+    <title>Java基础--数据类型和分类</title>
+    <link href="/2019/07/22/Java%E5%9F%BA%E7%A1%80--%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%88%86%E7%B1%BB/"/>
+    <id>/2019/07/22/Java基础--数据类型和分类/</id>
+    <published>2019-07-21T16:00:00.000Z</published>
+    <updated>2019-08-02T11:28:25.437Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;为什么有数据类型：&quot;&gt;&lt;a href=&quot;#为什么有数据类型：&quot; class=&quot;headerlink&quot; title=&quot;为什么有数据类型：&quot;&gt;&lt;/a&gt;为什么有数据类型：&lt;/h2&gt;&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="/tags/Java/"/>
+    
+      <category term="数据类型和分类" scheme="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%88%86%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java基础--原码反码补码</title>
     <link href="/2019/07/22/Java%E5%9F%BA%E7%A1%80--%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/"/>
     <id>/2019/07/22/Java基础--原码反码补码/</id>
@@ -209,34 +265,6 @@
       <category term="Java" scheme="/tags/Java/"/>
     
       <category term="原码反码补码" scheme="/tags/%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java基础--数据类型和分类</title>
-    <link href="/2019/07/22/Java%E5%9F%BA%E7%A1%80--%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%88%86%E7%B1%BB/"/>
-    <id>/2019/07/22/Java基础--数据类型和分类/</id>
-    <published>2019-07-21T16:00:00.000Z</published>
-    <updated>2019-08-02T11:28:25.437Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;为什么有数据类型：&quot;&gt;&lt;a href=&quot;#为什么有数据类型：&quot; class=&quot;headerlink&quot; title=&quot;为什么有数据类型：&quot;&gt;&lt;/a&gt;为什么有数据类型：&lt;/h2&gt;&lt;p&gt;​   
-        
-      
-    
-    </summary>
-    
-      <category term="Java" scheme="/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="/tags/Java/"/>
-    
-      <category term="数据类型和分类" scheme="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%88%86%E7%B1%BB/"/>
     
   </entry>
   
