@@ -8,7 +8,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -95,7 +95,7 @@
 <meta property="og:url" content="/page/2/index.html">
 <meta property="og:site_name" content="Will&#39;s Blog">
 <meta property="og:description" content="The world is beautiful.Like you.">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Will&#39;s Blog">
 <meta name="twitter:description" content="The world is beautiful.Like you.">
@@ -114,7 +114,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -146,7 +146,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -248,7 +248,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            Search
+            搜索
           </a>
         </li>
       
@@ -267,7 +267,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -333,9 +333,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-22T00:00:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-22T00:00:00+08:00">
                 2019-07-22
               </time>
             
@@ -354,7 +354,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -388,9 +388,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                  <span class="post-meta-item-text">字数统计&#58;</span>
                 
-                <span title="Words count in article">
+                <span title="字数统计">
                   857
                 </span>
               
@@ -404,9 +404,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">
+                <span title="阅读时长">
                   3
                 </span>
               
@@ -430,124 +430,29 @@
       
         
           
-            <h2 id="为什么有数据类型："><a href="#为什么有数据类型：" class="headerlink" title="为什么有数据类型："></a>为什么有数据类型：</h2><p>​    Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型，在内存分配时，分配了不同大小的内存空间，方便节约内存以及内存管理</p>
-<hr>
-<h2 id="Java中的数据类型分类："><a href="#Java中的数据类型分类：" class="headerlink" title="Java中的数据类型分类："></a>Java中的数据类型分类：</h2><ul>
-<li><p>基本数据类型</p>
-</li>
-<li><p>引用数据类型（面向对象中补充）</p>
-<p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataType.GIF" alt="DataType"></p>
-</li>
-</ul>
-<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="整数型（默认类型int）"><a href="#整数型（默认类型int）" class="headerlink" title="整数型（默认类型int）"></a>整数型（默认类型int）</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">大小</th>
-<th align="center">注意</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">byte</td>
-<td align="center">1字节</td>
-<td align="center">-128~127</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">short</td>
-<td align="center">2字节</td>
-<td align="center">-2^15~2^15-1</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">int</td>
-<td align="center">4字节</td>
-<td align="center">-2^31~2^31-1</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">long</td>
-<td align="center">8字节</td>
-<td align="center">-2^63~2^63-1</td>
-<td align="center">后需要加L/l进行标识</td>
-</tr>
-</tbody></table>
-<h4 id="浮点型（默认类型double）"><a href="#浮点型（默认类型double）" class="headerlink" title="浮点型（默认类型double）"></a>浮点型（默认类型double）</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">大小</th>
-<th align="center">注意</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">float</td>
-<td align="center">4字节</td>
-<td align="center">-3.403E38~3.403E38</td>
-<td align="center">后需要加F/f进行标识</td>
-</tr>
-<tr>
-<td align="center">double</td>
-<td align="center">8字节</td>
-<td align="center">-1.798E308-1.798E308</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<h4 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">大小</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">char</td>
-<td align="center">2字节</td>
-<td align="center">0~65535</td>
-</tr>
-</tbody></table>
-<h4 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h4><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">长度</th>
-<th align="center">值</th>
-<th align="center">注意</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">boolean</td>
-<td align="center">1/8字节(理论上，没有明确指定)</td>
-<td align="center">true\false</td>
-<td align="center">不可转化为其他类型</td>
-</tr>
-</tbody></table>
-<h2 id="常见案例"><a href="#常见案例" class="headerlink" title="常见案例"></a>常见案例</h2><p>​    <strong>作用域问题：</strong></p>
-<p>​        同一作用域内不能使用相同的变量名</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_1DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> x = <span class="number">10</span>;</span><br><span class="line">		<span class="comment">//int x = 20;</span></span><br><span class="line">		System.out.println(x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
+          为什么有数据类型：​    Java语言是强类型语言，对于每一种数据都定义了明确的具体数据类型，在内存分配时，分配了不同大小的内存空间，方便节约内存以及内存管理
 
-<p>​    <strong>初始值问题：</strong></p>
-<p>​        局部变量在使用之前必须赋值</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_2DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> y;</span><br><span class="line">		<span class="comment">//y = 10;</span></span><br><span class="line">        y = <span class="number">10</span>;</span><br><span class="line">		System.out.println(y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
+Java中的数据类型分类：
+基本数据类型
 
-<p>​    <strong>一条语句可以定义几个变量</strong>：</p>
-<p>​        int a,b,c,d…….;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo_3DataType</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		<span class="keyword">int</span> a,b,c;</span><br><span class="line">		a = <span class="number">10</span>;</span><br><span class="line">		b = <span class="number">20</span>;</span><br><span class="line">		c = <span class="number">30</span>;     </span><br><span class="line">        <span class="keyword">short</span> x = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">long</span> y = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">byte</span> z = <span class="number">3</span>;</span><br><span class="line">		System.out.println(a);</span><br><span class="line">		System.out.println(b);</span><br><span class="line">		System.out.println(c);</span><br><span class="line">        System.out.println(x);</span><br><span class="line">        System.out.println(y);</span><br><span class="line">        System.out.println(z);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">20</span></span><br><span class="line"><span class="number">30</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+引用数据类型（面向对象中补充）
 
-<h2 id="数据类型之隐式转换"><a href="#数据类型之隐式转换" class="headerlink" title="数据类型之隐式转换"></a>数据类型之隐式转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo4_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *	byte,short,char --&gt; int --&gt;long --&gt; float --&gt;double</span></span><br><span class="line"><span class="comment">     *boolean 不参与运算</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;		<span class="comment">//默认进行隐式转换——小转大：byte转换为int</span></span><br><span class="line">        x = x+y;</span><br><span class="line">        System.out.println(x);        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">----------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion1.GIF" alt="DataTypeConversion1"></p>
-<h2 id="数据类型之强制转换"><a href="#数据类型之强制转换" class="headerlink" title="数据类型之强制转换"></a>数据类型之强制转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo5_DataTypeConversion</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    	<span class="keyword">int</span> x = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> y = <span class="number">4</span>;</span><br><span class="line">        y = (<span class="keyword">byte</span>)(x+y);		<span class="comment">//使用相应类型进行强制转换</span></span><br><span class="line">        System.out.println(y); </span><br><span class="line">        </span><br><span class="line"><span class="comment">/*向下强制转换后的值作为补码直接进行计算，这样会存在损失精度的问题*/</span></span><br><span class="line">        <span class="keyword">byte</span> b = (<span class="keyword">byte</span>)(<span class="number">126</span>+<span class="number">4</span>);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000000	10000010	130的二进制</span></span><br><span class="line">        <span class="comment">//10000010	强制转换后	-126是补码，即：126的补码</span></span><br><span class="line">        <span class="comment">//10000001	补码-1		126的反码</span></span><br><span class="line">        <span class="comment">//01111110	原码		126的原码</span></span><br><span class="line">        <span class="keyword">byte</span> c = (<span class="keyword">byte</span>)<span class="number">300</span>;</span><br><span class="line">        System.out.println(c);</span><br><span class="line">        <span class="comment">//00000000	00000000	00000001	00101100	300的二进制</span></span><br><span class="line">        <span class="comment">//00101100	强制转换后	 44是补码</span></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">------------------------------------------------------------------------</span><br><span class="line"><span class="number">7</span></span><br><span class="line">-<span class="number">126</span></span><br><span class="line"><span class="number">44</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="E:%5CBlog%5Cblog%5Csource%5Cpicture%5CDataTypeConversion2.GIF" alt="DataTypeConversion2"></p>
-<h2 id="面试题："><a href="#面试题：" class="headerlink" title="面试题："></a>面试题：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test_DataTtpeConversion</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="comment">//看下面程序是否有问题，如果有问题，请说明理由。</span></span><br><span class="line">        <span class="keyword">byte</span> b1 = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">byte</span> b2 = <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">byte</span> b3 = b1 + b2;	<span class="comment">//此句有误</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        bug：Type mismatch: cannot convert from int to byte</span></span><br><span class="line"><span class="comment">        两方面：</span></span><br><span class="line"><span class="comment">        1.byte与byte（或short，char）进行运算时会提升为int，两个int相加后的和也为int类型</span></span><br><span class="line"><span class="comment">        2.b1、b2是两个变量，变量存储的值是变化的，在编译的时候无法判断里面具体的值，相加有可能会超出byte的取值      </span></span><br><span class="line"><span class="comment">        Debug：强制转换</span></span><br><span class="line"><span class="comment">        byte b3 = (byte)(b1 + b2);	</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">byte</span> b4 = <span class="number">3</span> + <span class="number">4</span>;</span><br><span class="line">        <span class="comment">/*这句为什么是正确的？</span></span><br><span class="line"><span class="comment">        java编译器有常量优化机制,即：对常量结果进行判断。本题目中：7在-128~127之间，即：一个字节的长度内，所以直接赋值。</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        System.out.sprintln(b3);  </span><br><span class="line">        System.out.sprintln(b4);  </span><br><span class="line">    &#125;  </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">-------------------------------------------------------------------</span><br><span class="line">Debug后：</span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+基本数据类型整数型（默认类型int）
 
-<h3 id="long与float大小关系"><a href="#long与float大小关系" class="headerlink" title="long与float大小关系"></a>long与float大小关系</h3><p>5</p>
 
-          
+类型
+长度
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/22/Java基础--数据类型和分类/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -631,9 +536,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-22T00:00:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-22T00:00:00+08:00">
                 2019-07-22
               </time>
             
@@ -652,7 +557,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -686,9 +591,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                  <span class="post-meta-item-text">字数统计&#58;</span>
                 
-                <span title="Words count in article">
+                <span title="字数统计">
                   118
                 </span>
               
@@ -702,9 +607,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">
+                <span title="阅读时长">
                   1
                 </span>
               
@@ -728,41 +633,40 @@
       
         
           
-            <p><strong>作用</strong>：用于计算、强制类型转换</p>
-<p><strong>区分：</strong>有符号位数据表示方式（最高位为符号位）</p>
-<table>
-<thead>
-<tr>
-<th align="center">数</th>
-<th align="center">原码</th>
-<th align="center">反码</th>
-<th align="center">补码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">正数</td>
-<td align="center">与原码同（0011）</td>
-<td align="center">与原码同（0011）</td>
-<td align="center">与原码同（0011）</td>
-</tr>
-<tr>
-<td align="center">负数</td>
-<td align="center">与原码同（1011）</td>
-<td align="center">原码逐位取反（0100）</td>
-<td align="center">反码末位加1（0101）</td>
-</tr>
-</tbody></table>
-<p><strong>计算：</strong></p>
-<p>​    A:已知原码求补码（先取反再加1）</p>
-<p>​        1011    原码</p>
-<p>​        0100    反码</p>
-<p>​        0101    补码</p>
-<p>​    B:已知补码求原码</p>
-<p>​        0101    补码</p>
-<p>​        0100    反码</p>
-<p>​        1011    原码</p>
+          作用：用于计算、强制类型转换
+区分：有符号位数据表示方式（最高位为符号位）
 
-          
+
+
+数
+原码
+反码
+补码
+
+
+
+正数
+与原码同（0011）
+与原码同（0011）
+与原码同（0011）
+
+
+负数
+与原码同（1011）
+原码逐位取反（0100）
+反码末位加1（0101）
+
+
+计算：
+​    A:已知原码
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/22/Java基础--原码反码补码/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -846,9 +750,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-09T23:02:49+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-09T23:02:49+08:00">
                 2019-07-09
               </time>
             
@@ -879,9 +783,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                  <span class="post-meta-item-text">字数统计&#58;</span>
                 
-                <span title="Words count in article">
+                <span title="字数统计">
                   0
                 </span>
               
@@ -895,9 +799,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">
+                <span title="阅读时长">
                   1
                 </span>
               
@@ -921,8 +825,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/09/test-my-site/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1006,9 +917,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-09T22:42:06+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-09T22:42:06+08:00">
                 2019-07-09
               </time>
             
@@ -1039,9 +950,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                  <span class="post-meta-item-text">字数统计&#58;</span>
                 
-                <span title="Words count in article">
+                <span title="字数统计">
                   73
                 </span>
               
@@ -1055,9 +966,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">
+                <span title="阅读时长">
                   1
                 </span>
               
@@ -1081,21 +992,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/09/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1192,7 +1097,7 @@
                 <a href="/archives">
               
                   <span class="site-state-item-count">14</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -1201,10 +1106,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">categories</span>
-                
+                  <span class="site-state-item-name">分类</span>
+                </a>
               </div>
             
 
@@ -1212,10 +1117,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">14</span>
-                  <span class="site-state-item-name">tags</span>
-                
+                  <span class="site-state-item-name">标签</span>
+                </a>
               </div>
             
 
@@ -1289,6 +1194,19 @@
 
       
 
+      
+      <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+      <div class="widget-wrap">
+          <h3 class="widget-title">Tag Cloud</h3>
+          <div id="myCanvasContainer" class="widget tagcloud">
+              <canvas width="250" height="250" id="resCanvas" style="width=100%">
+                  <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java基础-Random/">Java基础--Random</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NexT/">NexT</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原码反码补码/">原码反码补码</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据类型和分类/">数据类型和分类</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数组/">数组</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/方法/">方法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/流程控制/">流程控制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/继承和多态/">继承和多态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/语法格式/">语法格式</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/键盘录入/">键盘录入</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面向对象/">面向对象</a><span class="tag-list-count">1</span></li></ul>
+              </canvas>
+          </div>
+      </div>
+      
+
     </div>
   </aside>
 
@@ -1322,7 +1240,7 @@
 
 <!--
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -1330,7 +1248,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 <div>

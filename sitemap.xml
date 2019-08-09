@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/categories/index.html</loc>
+    
+    <lastmod>2019-08-09T13:48:45.416Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/tags/index.html</loc>
+    
+    <lastmod>2019-08-09T13:48:39.680Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/2019/08/07/Java%E5%9F%BA%E7%A1%80--%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
     
     <lastmod>2019-08-09T07:50:52.732Z</lastmod>
@@ -103,20 +117,6 @@
     <loc>/about/index.html</loc>
     
     <lastmod>2019-07-12T11:28:19.515Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/tags/index.html</loc>
-    
-    <lastmod>2019-07-12T11:28:10.282Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/categories/index.html</loc>
-    
-    <lastmod>2019-07-12T11:27:51.344Z</lastmod>
     
   </url>
   
